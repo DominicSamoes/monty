@@ -129,6 +129,11 @@ These are all the tasks of this project, the ones that are completed link to the
 	- The integer stored at the top of the stack is treated as the ascii value of the character to be printed
 	- If the value is not in the ascii table (man ascii) print the error message L<line_number>: can't pchar, value out of range, followed by a new line, and exit with the status EXIT_FAILURE
 	- If the stack is empty, print the error message L<line_number>: can't pchar, stack empty, followed by a new line, and exit with the status EXIT_FAILURE
+
+
+# Manual
+
+
 ---
 
 ### Author
