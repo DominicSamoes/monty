@@ -26,7 +26,7 @@ What I learned from the tasks:
 
 These are all the tasks of this project, the ones that are completed link to the corresponding files.
 
-### [0. push, pall](./)
+### 0. push, pall
 * Implement the push and pall opcodes.
 * The push opcode
 * The opcode push pushes an element to the stack.
@@ -131,6 +131,67 @@ These are all the tasks of this project, the ones that are completed link to the
 	- If the stack is empty, print the error message L<line_number>: can't pchar, stack empty, followed by a new line, and exit with the status EXIT_FAILURE
 
 
+### 12. pstr
+* Implement the pstr opcode.
+* The pstr opcode
+* The opcode pstr prints the string starting at the top of the stack, followed by a new line.
+	- Usage: pstr
+	- The integer stored in each element of the stack is treated as the ascii value of the character to be printed
+	- The string stops when either:
+		+ the stack is over
+		+ the value of the element is 0
+		+ the value of the element is not in the ascii table
+	- If the stack is empty, print only a new line
+
+### 13. rotl
+* Implement the rotl opcode.
+* The rotl opcode
+* The opcode rotl rotates the stack to the top.
+	- Usage: rotl
+	- The top element of the stack becomes the last one, and the second top element of the stack becomes the first one
+	- rotl never fails
+
+
+### 14. rotr
+* Implement the rotr opcode.
+* The rotr opcode
+* The opcode rotr rotates the stack to the bottom.
+	- Usage: rotr
+	- The last element of the stack becomes the top element of the stack
+	- rotr never fails
+
+### 15. stack, queue
+* Implement the stack and queue opcodes.
+* The stack opcode
+* The opcode stack sets the format of the data to a stack (LIFO). This is the default behavior of the program.
+	- Usage: stack
+* The queue opcode
+* The opcode queue sets the format of the data to a queue (FIFO).
+	- Usage: queue
+* When switching mode:
+	- The top of the stack becomes the front of the queue
+	- The front of the queue becomes the top of the stack
+
+### 16. Brainf*ck
+* Write a Brainf*ck script that prints School, followed by a new line.
+	- All your Brainf*ck files should be stored inside the bf sub directory
+	- You can install the bf interpreter to test your code: sudo apt-get install bf
+	- Read [Brainf*ck](https://en.wikipedia.org/wiki/Brainfuck)
+
+### 17. Add two digits
+* Add two digits given by the user.
+	- Read the two digits from stdin, add them, and print the result
+	- The total of the two digits with be one digit-long (<10)
+
+
+### 18. Multiplication
+* Multiply two digits given by the user.
+	- Read the two digits from stdin, multiply them, and print the result
+	- The result of the multiplication will be one digit-long (<10)
+
+### 19. Multiplication level up
+* Multiply two digits given by the user.
+	- Read the two digits from stdin, multiply them, and print the result, followed by a new line
 # Manual
 
 
